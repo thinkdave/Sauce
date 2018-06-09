@@ -1,0 +1,15 @@
+/*
+Theme Name: Sauce
+Author: Proof
+Author URI: https://proofbranding.com
+Description: Custom theme starter
+Text Domain: thm
+*/
+
+// 1 - TOOLS
+@import '1-tools/normalize';
+
+// 2 - HELPERS
+@import '2-helpers/variables';
+@import '2-helpers/functions';
+@import '2-helpers/mixins';

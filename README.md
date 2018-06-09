@@ -1,2 +1,0 @@
-# Sauce
-Source WordPress Theme
