@@ -4,7 +4,7 @@ jQuery(function( $ ){
     $(this).addClass('clicked');
 		$(this).next(".menu").slideToggle();
 		$("#nav").toggleClass('openwide');
-		//$('.site-header').toggleClass('nav-toggle');
+		$('.site-header').toggleClass('nav-toggle');
 	});
 
 	$(window).resize(function(){
