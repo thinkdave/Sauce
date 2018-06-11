@@ -17,6 +17,9 @@ Text Domain: thm
 // 3 - BASE Styles
 @import '3-basics/base';
 @import '3-basics/grid';
+@import '3-basics/accessibility';
+@import '3-basics/forms';
+@import '3-basics/wordpress';
 
 // 4 - LAYOUT
 @import '4-layout/header';

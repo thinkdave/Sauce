@@ -1,5 +1,4 @@
-    </div><!--/content-sidebar-wrapper-->
-  </div><!--/main-->
+  </div><!--/content-->
 
   <footer class="site-footer">
     <div class="row">

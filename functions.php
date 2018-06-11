@@ -4,25 +4,19 @@
 // ========================================
 if ( ! function_exists( 'thm_setup' ) ) :
 	function thm_setup() {
-		// RSS feeds
 		add_theme_support( 'automatic-feed-links' );
 
-    // Set content-width
 		global $content_width;
 		if ( ! isset( $content_width ) ) $content_width = 600;
 
-		// Let WordPress handle the title tag
 		add_theme_support( 'title-tag' );
 
-		// Post thumbnail support
 		add_theme_support( 'post-thumbnails' );
 
-		// WordPress Menus
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Main Menu', 'thm' )
 		) );
 
-		// HTML5 support
 		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 	}
 endif;
@@ -74,6 +68,8 @@ if ( ! function_exists( 'thm_enqueue_scripts' ) ) {
     if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
       wp_enqueue_script( 'comment-reply' );
     }
+
+		wp_enqueue_script( 'thm-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '', true );
   }
 
   add_action( 'wp_enqueue_scripts', 'thm_enqueue_scripts' );
@@ -81,12 +77,12 @@ if ( ! function_exists( 'thm_enqueue_scripts' ) ) {
 
 
 // ========================================
-// Modify HTML class to indicate JS
+// Custom template tags for this theme
 // ========================================
-if ( ! function_exists( 'thm_has_js' ) ) {
-  function thm_has_js() { ?>
-  <script>jQuery( 'html' ).removeClass( 'no-js' ).addClass( 'js' );</script>
-  <?php }
+require get_template_directory() . '/inc/template-tags.php';
 
-  add_action( 'wp_head', 'thm_has_js' );
-}
+
+// ========================================
+// Custom functions for this theme
+// ========================================
+require get_template_directory() . '/inc/custom-functions.php';
