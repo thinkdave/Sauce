@@ -13,3 +13,10 @@ Text Domain: thm
 @import '2-helpers/variables';
 @import '2-helpers/functions';
 @import '2-helpers/mixins';
+
+// 3 - BASE Styles
+@import '3-basics/base';
+@import '3-basics/grid';
+
+// 4 - LAYOUT
+@import '4-layout/header';

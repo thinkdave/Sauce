@@ -15,9 +15,10 @@
     <div class="row">
       <div class="site-branding small-12 large-3 columns">
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
-      </div><!--/branding-->
+      </div> <!--/branding-->
       <div class="menu-wrapper small-12 large-9 columns">
-        <nav id="nav" class="nav-header" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <nav id="nav" class="nav-header">
+          <div class="responsive-menu-icon"></div>
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '' ) ); ?>
         </nav>
       </div><!--/menu-wrapper-->
