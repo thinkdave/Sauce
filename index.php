@@ -1,19 +1,41 @@
 <?php get_header(); ?>
 
-<div class="content">
-	<div class="row">
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+	<div class="index-content row">
+		<div class="small-12 columns">
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class('small-12 columns'); ?>>
-		<?php the_excerpt(); ?>
-	</article>
+		<?php
+		if ( have_posts() ) :
 
-	<?php endwhile; ?>
+			if ( is_home() && ! is_front_page() ) :
+				?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+				<?php
+			endif;
 
-	<?php else : ?>
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
-	<?php endif; ?>
-	</div><!--/row-->
-</div><!--/content-->
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_type() );
+
+			endwhile;
+
+			the_posts_navigation();
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
+		?>
+		</div><!--columns-->
+	</div><!--index-content -->
 
 <?php get_footer(); ?>
