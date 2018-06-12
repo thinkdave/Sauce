@@ -1,5 +1,6 @@
 jQuery(function( $ ){
 
+	// Mobile Menu
 	$(".responsive-menu-icon").click(function(){
     $(this).addClass('clicked');
 		$(this).next(".menu").slideToggle();
@@ -20,6 +21,16 @@ jQuery(function( $ ){
 			$(this).find(".sub-menu:first").slideToggle(function() {
 			$(this).parent().toggleClass("menu-open");
 		});
+	});
+
+	// Fixed Header background on pages with a hero.
+	var fixedHeader = $('body.has-hero');
+	$(window).scroll( function() {
+	if( $(this).scrollTop() > 65 ) {
+	fixedHeader.removeClass( 'has-hero' );
+	} else {
+	fixedHeader.addClass( 'has-hero' );
+	}
 	});
 
 });

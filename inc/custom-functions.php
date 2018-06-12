@@ -25,6 +25,17 @@ function thm_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+  // Flexible Content Loop
+  if( have_rows( 'blocks' ) ) : while( have_rows( 'blocks' ) ) : the_row();
+    if( get_row_layout() == 'block_hero' ) {
+      $classes[] = 'has-hero';
+    }
+  endwhile;
+
+  else :
+    $classes[] = 'no-hero';
+  endif;
+
 	return $classes;
 }
 

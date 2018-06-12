@@ -1,7 +1,13 @@
 /*--------------------------------------------------------------
 # Main Content Area
 --------------------------------------------------------------*/
-
-#content {
+.no-hero #content,
+.has-hero #content {
   margin-top: 55px;
+}
+
+@media screen and (min-width: 1025px) {
+  .has-hero #content {
+    margin-top: 0;
+  }
 }
