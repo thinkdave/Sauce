@@ -5,6 +5,9 @@ Source WordPress Theme.
 - [Foundation Grid](https://foundation.zurb.com/grid.html).
 - Fixed Header.
 - Dropdown and mobile navigation.
+- Underscores default page templates, but with the Foundation grid.
+- Blocks Page Template.
+
 
 ## Blocks
 - Text Editor
