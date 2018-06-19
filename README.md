@@ -13,9 +13,10 @@ Source WordPress Theme.
 - Text Editor
 - Image Box (the artist formerly known as Media Block)
 - Hero
-- Two Columns (coming soon)
-- Three Columns (also coming soon)
-- Four Columns (also also coming soon)
+- Banner image (Hero without text)
+- Two Columns
+- Three Columns
+- Four Columns (coming soon)
 - Media Object Repeater (maybe)
 
 ## CSS
