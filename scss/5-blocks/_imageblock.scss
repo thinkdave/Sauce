@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+# imageblock
+--------------------------------------------------------------*/
+.imageblock {
+  position: relative;
+}
+
+.image-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .image-img {
+    height: 450px;
+  }
+}
