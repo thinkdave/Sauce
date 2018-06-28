@@ -13,6 +13,8 @@ if ( ! function_exists( 'thm_setup' ) ) :
 
 		add_theme_support( 'post-thumbnails' );
 
+		add_editor_style( 'css/custom-editor-style.css' );
+
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Main Menu', 'thm' )
 		) );
@@ -74,6 +76,20 @@ if ( ! function_exists( 'thm_enqueue_scripts' ) ) {
 
   add_action( 'wp_enqueue_scripts', 'thm_enqueue_scripts' );
 }
+
+
+// ========================================
+// Apply Editor Styles to ACF WYSIWYG
+// https://pagegwood.com/web-development/custom-editor-stylesheets-advanced-custom-fields-wysiwyg/
+// ========================================
+add_filter( 'tiny_mce_before_init', function ($mce_init) {
+  $content_css = get_stylesheet_directory_uri() .'/css/editor-style.css';
+  if ( isset( $mce_init[ 'content_css' ] ) ) {
+    $content_css_new =  $mce_init[ 'content_css' ].','.$content_css;
+  }
+  $mce_init[ 'content_css' ] = $content_css_new;
+  return $mce_init;
+});
 
 
 // ========================================
