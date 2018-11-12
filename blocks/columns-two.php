@@ -13,15 +13,18 @@
 		$html_class = '';
 	}
 ?>
-<section <?php echo $html_id; ?> class="block text-editor two-columns<?php echo $html_class; ?>">
-  <div class="row">
-    <?php while(have_rows('two_columns')) : the_row(); ?>
-    <div class="small-12 large-6 columns">
-        <div class="inner">
-          <?php the_sub_field('content_editor'); ?>
-        </div><!-- inner -->
-    </div><!--columns-->
-    <?php endwhile; ?>
-  </div><!--row-->
+<section <?php echo $html_id; ?> class="block columns-two<?php echo $html_class; ?>">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-6 columns-two--one">
+				<?php the_sub_field('columns_two_one'); ?>
+			</div>
+
+			<div class="col-lg-6 columns-two--two">
+				<?php the_sub_field('columns_two_two'); ?>
+			</div>
+
+		</div>
+	</div>
 </section>
-<!--text-editor-->

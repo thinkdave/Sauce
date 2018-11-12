@@ -13,15 +13,22 @@
 		$html_class = '';
 	}
 ?>
-<section <?php echo $html_id; ?> class="block text-editor three-columns<?php echo $html_class; ?>">
-  <div class="row">
-    <?php while(have_rows('three_columns')) : the_row(); ?>
-    <div class="small-12 large-4 columns">
-        <div class="inner">
-          <?php the_sub_field('content_editor'); ?>
-        </div><!-- inner -->
-    </div><!--columns-->
-    <?php endwhile; ?>
-  </div><!--row-->
+<section <?php echo $html_id; ?> class="block columns-three<?php echo $html_class; ?>">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-4 columns-three--one">
+				<?php the_sub_field('columns_three_one'); ?>
+			</div>
+
+			<div class="col-lg-4 columns-three--two">
+				<?php the_sub_field('columns_three_two'); ?>
+			</div>
+
+			<div class="col-lg-4 columns-three--three">
+				<?php the_sub_field('columns_three_three'); ?>
+			</div>
+
+		</div>
+	</div>
 </section>
-<!--text-editor-->
