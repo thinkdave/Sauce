@@ -2844,9 +2844,9 @@ Galleries
   top: 32px;
 }
 
-.site-header .container .row {
-  padding-left: 15px;
-  padding-right: 15px;
+.site-header .row {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .sticky-header .site-header,
@@ -2876,7 +2876,7 @@ p.site-title {
 }
 
 @media screen and (min-width: 1025px) {
-  .site-header .container .row {
+  .site-header .row {
     display: flex;
     align-items: center;
     position: relative;
