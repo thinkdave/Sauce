@@ -6,27 +6,30 @@ Description: Custom theme starter
 Text Domain: thm
 */
 
-// 1 - TOOLS
-@import '1-tools/normalize';
+// 1 - 3rd party tools
+@import '1-lib/normalize';
 
-// 2 - HELPERS
+// 2 - helpers
 @import '2-helpers/variables';
 @import '2-helpers/functions';
 @import '2-helpers/mixins';
 
-// 3 - BASE Styles
-@import '3-basics/base';
-@import '3-basics/bootstrap-grid';
-@import '3-basics/accessibility';
-@import '3-basics/forms';
-@import '3-basics/wordpress';
-@import '3-basics/colours';
+// 3 - Setup Basic theme styles
+@import '3-structure/base';
+@import '3-structure/accessibility';
+@import '1-lib/bootstrap-grid';
+@import '3-structure/wordpress';
 
-// 4 - LAYOUT
-@import '4-layout/header';
-@import '4-layout/main';
+// 4 - Presentation
+@import '4-presentation/typography';
+@import '4-presentation/links';
+@import '4-presentation/forms';
+@import '4-presentation/header';
+@import '4-presentation/main';
+@import '4-presentation/page';
+@import '4-presentation/footer';
 
-// 5 - BLOCKS
+// 5 - Blocks
 @import '5-blocks/hero';
 @import '5-blocks/editor';
 @import '5-blocks/columns-two';

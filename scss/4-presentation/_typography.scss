@@ -1,19 +1,29 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
-  background: #fff;
-  color: #000;
   font-family: $font-family-main;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+ol {}
+
+ul {}
+
+li {}
+
+blockquote {}
