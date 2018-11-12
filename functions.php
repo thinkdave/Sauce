@@ -32,7 +32,26 @@ add_action( 'after_setup_theme', 'thm_setup' );
 function thm_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'footer-1',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
+		'id'            => 'footer-2',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
+		'id'            => 'footer-3',
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
