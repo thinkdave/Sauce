@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'thm_setup' );
 // ========================================
 function thm_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
+		'name'          => esc_html__( 'Footer 1', 'thm' ),
 		'id'            => 'footer-1',
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -41,7 +41,7 @@ function thm_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
+		'name'          => esc_html__( 'Footer 2', 'thm' ),
 		'id'            => 'footer-2',
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -50,7 +50,7 @@ function thm_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Widgets', 'thm' ),
+		'name'          => esc_html__( 'Footer 3', 'thm' ),
 		'id'            => 'footer-3',
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
