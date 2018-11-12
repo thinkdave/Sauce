@@ -2,23 +2,15 @@
 Source WordPress Theme.
 
 ## Sauce ingredients:
-- [Foundation Grid](https://foundation.zurb.com/grid.html).
+- Bootstrap 4 Grid.
 - Fixed Header.
 - Dropdown and mobile navigation.
 - Underscores default page templates, but with the Foundation grid.
 - Blocks Page Template.
 
 
-## Blocks
-- Text Editor
-- Image Box (the artist formerly known as Media Block)
-- Hero
-- Banner image (Hero without text)
-- Two Columns
-- Three Columns
-- Four Columns (coming soon)
-- Media Object Repeater (maybe)
+## Core Blocks
+- To be updated once we finalise core blocks.
 
-## CSS
-
-Sauce uses Sass. If you want to use Sass too, edit the .scss files locally. If not, you can edit style.css directly.
+## Add-on Blocks
+Add-on blocks will be available in the Sauce blocks repository (link and details to follow)
