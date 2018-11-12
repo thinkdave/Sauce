@@ -11,9 +11,9 @@
 .admin-bar .site-header {
 	top: 32px;
 }
-.site-header .row {
-	padding-left: 30px;
-	padding-right: 30px;
+.site-header .container .row {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .sticky-header .site-header,
@@ -43,10 +43,11 @@ p.site-title {
 }
 
 @media screen and (min-width:  1025px) {
-	.site-header .row {
+	.site-header .container .row {
 		display: flex;
 		align-items: center;
 		position: relative;
+
 	}
 
 	.site-header .site-branding {
