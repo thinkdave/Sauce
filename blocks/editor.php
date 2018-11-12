@@ -13,11 +13,13 @@
 		$html_class = '';
 	}
 ?>
-<section <?php echo $html_id; ?> class="block text-editor<?php echo $html_class; ?>">
-  <div class="row">
-    <div class="small-12 columns">
-        <?php the_sub_field('text_editor_content_editor'); ?>
-    </div><!--columns-->
-  </div><!--row-->
+
+<section <?php echo $html_id; ?> class="block editor<?php echo $html_class; ?>">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<?php the_sub_field('editor'); ?>
+			</div>
+		</div>
+	</div>
 </section>
-<!--text-editor-->
