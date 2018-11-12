@@ -1,5 +1,15 @@
 jQuery(function( $ ){
 
+	// Add class on scroll
+	var fixedHeader = $('body');
+    $(window).scroll( function() {
+        if( $(this).scrollTop() > 32 ) {
+            fixedHeader.addClass( 'sticky-header' );
+        } else {
+            fixedHeader.removeClass( 'sticky-header' );
+        }
+    });
+
 	// Mobile Menu
 	$(".responsive-menu-icon").click(function(){
     $(this).addClass('clicked');
@@ -8,12 +18,6 @@ jQuery(function( $ ){
 		$('.site-header').toggleClass('nav-toggle');
 	});
 
-	$(window).resize(function(){
-		if(window.innerWidth > 680) {
-			$("#nav .menu, #nav .menu .sub-menu").removeAttr("style");
-			$("#nav .menu > .menu-item").removeClass("menu-open");
-		}
-	});
 
 	$("#nav .menu > .menu-item").click(function(event){
 		if (event.target !== this)
@@ -23,14 +27,18 @@ jQuery(function( $ ){
 		});
 	});
 
-	// Fixed Header background on pages with a hero.
-	var fixedHeader = $('body.has-hero');
-	$(window).scroll( function() {
-	if( $(this).scrollTop() > 65 ) {
-	fixedHeader.removeClass( 'has-hero' );
-	} else {
-	fixedHeader.addClass( 'has-hero' );
-	}
+	$("#nav .menu > .menu-item .arrow").click(function(event){
+			$(this).parent().find(".sub-menu:first").slideToggle(function() {
+			$(this).parent().parent().toggleClass("menu-open");
+		});
 	});
+
+	
+
+    // Disable Jump on empty menu links
+    $('.disabled-link > a').click( function(e){
+        e.preventDefault();
+    });
+
 
 });
