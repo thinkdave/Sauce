@@ -3199,6 +3199,28 @@ p.site-title {
     margin-top: 0;
   }
 }
+.site-footer {
+  background-color: #ccc;
+}
+.site-footer h3,
+.site-footer .widget-title {
+  margin: 0;
+}
+.site-footer ul.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.site-footer p {
+  margin: 0;
+}
+.site-footer .footer-utility {
+  background-color: #AAA;
+}
+.site-footer .footer-utility .designby {
+  text-align: right;
+}
+
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/

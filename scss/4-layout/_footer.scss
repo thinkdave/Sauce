@@ -1,0 +1,25 @@
+.site-footer {
+	background-color: #ccc;
+	h3,
+	.widget-title {
+		margin: 0
+	}
+	ul.menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	p {
+		margin: 0;
+	}
+	.footer-utility {
+		background-color: #AAA;
+
+		.copy {
+
+		}
+		.designby{
+			text-align:right;
+		}
+	}
+}
