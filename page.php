@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'blocks/text-image' ); ?>
+
 	<div class="content-area container">
 		<div class="row">
 	    <div class="col-sm">
