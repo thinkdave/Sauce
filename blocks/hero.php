@@ -13,15 +13,15 @@
 		$html_class = '';
 	}
 ?>
-<section <?php echo $html_id; ?> class="block hero<?php echo $html_class; ?>">
+<section <?php echo $html_id; ?> class="block hero<?php echo $html_class; ?> aaa">
   <div class="hero-media">
-    <?php $heroImage = get_sub_field('hero_image_image_upload'); ?>
+    <?php $heroImage = get_sub_field('image'); ?>
     <div class="hero-img" style="background-image: url('<?php echo $heroImage['url']; ?>');"></div><!--hero-img-->
   </div><!--hero-media-->
   <div class="row">
     <div class="small-12 large-6 large-offset-3 columns end">
       <div class="valign">
-        <?php the_sub_field('hero_content_editor'); ?>
+        <?php the_sub_field('content'); ?>
       </div><!--valign-->
     </div><!--columns-->
   </div><!--row-->

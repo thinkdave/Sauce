@@ -15,7 +15,7 @@
 ?>
 <section <?php echo $html_id; ?> class="block image-box<?php echo $html_class; ?>">
   <div class="image-box-media">
-    <?php $bgImage = get_sub_field('image_box_bg_image_upload'); ?>
+    <?php $bgImage = get_sub_field('image_box_bg'); ?>
     <div class="image-box-img" style="background-image: url('<?php echo $bgImage['url']; ?>');"></div><!--image-box-img-->
   </div><!--image-box-media-->
   <div class="row">

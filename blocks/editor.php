@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<?php the_sub_field('editor'); ?>
+				<?php the_sub_field('content'); ?>
 			</div>
 		</div>
 	</div>
