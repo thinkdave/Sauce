@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# Text Image Block
+--------------------------------------------------------------*/
+.text-image-wrap {
+  position: relative;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.text-image-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .text-image-img {
+    min-height: 400px;
+  }
+
+  .text-image .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .text-image .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-image .image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .text-image .image-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
