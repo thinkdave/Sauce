@@ -13,8 +13,8 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_imagebox') :
 			get_template_part('blocks/image-box');
 
-			elseif(get_row_layout() == 'block_text_editor') :
-			get_template_part('blocks/text-editor');
+			elseif(get_row_layout() == 'block_editor') :
+			get_template_part('blocks/editor');
 
 			else : endif;
 
