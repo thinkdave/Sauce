@@ -13,7 +13,7 @@
 		$html_class = '';
 	}
 ?>
-<section <?php echo $html_id; ?> class="block hero<?php echo $html_class; ?> aaa">
+<section <?php echo $html_id; ?> class="block hero<?php echo $html_class; ?>">
   <div class="hero-media">
     <?php $heroImage = get_sub_field('image'); ?>
     <div class="hero-img" style="background-image: url('<?php echo $heroImage['url']; ?>');"></div><!--hero-img-->
