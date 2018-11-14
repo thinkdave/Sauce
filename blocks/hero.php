@@ -18,12 +18,12 @@
     <?php $heroImage = get_sub_field('image'); ?>
     <div class="hero-img" style="background-image: url('<?php echo $heroImage['url']; ?>');"></div><!--hero-img-->
   </div><!--hero-media-->
-  <div class="row">
-    <div class="small-12 large-6 large-offset-3 columns end">
-      <div class="valign">
-        <?php the_sub_field('content'); ?>
-      </div><!--valign-->
-    </div><!--columns-->
-  </div><!--row-->
+  <div class="container">
+	  <div class="row">
+	    <div class="col-md-8 col-lg-6 align-self-center">
+	        <?php the_sub_field('content'); ?>
+	    </div><!--col-->
+	  </div><!--row-->
+  </div>
 </section>
 <!--hero-->

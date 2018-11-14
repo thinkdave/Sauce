@@ -16,19 +16,9 @@
     	<div class="container">
 	      	<div class="row">
 		        <div class="site-branding">
-					<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>"/>
-						</a>
-					</h1>
-					<?php else : ?>
-					<p class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>"/>
-						</a>
-					</p>
-					<?php endif; ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>"/>
+					</a>
 		        </div> <!--/branding-->
 	        	<nav id="nav" class="nav-header">
 	            	<div class="responsive-menu-icon">

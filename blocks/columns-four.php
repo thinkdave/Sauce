@@ -29,7 +29,7 @@
 				<?php the_sub_field('columns_four_three'); ?>
 			</div>
 
-      <div class="col-lg-3 columns-four--four">
+      		<div class="col-lg-3 columns-four--four">
 				<?php the_sub_field('columns_four_four'); ?>
 			</div>
 
