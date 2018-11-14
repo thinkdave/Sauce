@@ -10,11 +10,12 @@ get_header(); ?>
 			if(get_row_layout() == 'block_hero') :
 			get_template_part('blocks/hero');
 
-			elseif(get_row_layout() == 'block_imagebox') :
-			get_template_part('blocks/image-box');
-
 			elseif(get_row_layout() == 'block_editor') :
 			get_template_part('blocks/editor');
+			
+			elseif(get_row_layout() == 'block_text_image') :
+			get_template_part('blocks/text-image');
+
 
 			else : endif;
 

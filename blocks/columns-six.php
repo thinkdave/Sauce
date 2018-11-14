@@ -29,15 +29,15 @@
 				<?php the_sub_field('columns_six_three'); ?>
 			</div>
 
-      <div class="col-lg-2 columns-six--four">
+      		<div class="col-lg-2 columns-six--four">
 				<?php the_sub_field('columns_six_four'); ?>
 			</div>
 
-      <div class="col-lg-2 columns-six--five">
+      		<div class="col-lg-2 columns-six--five">
 				<?php the_sub_field('columns_six_five'); ?>
 			</div>
 
-      <div class="col-lg-2 columns-six--six">
+      		<div class="col-lg-2 columns-six--six">
 				<?php the_sub_field('columns_six_six'); ?>
 			</div>
 
