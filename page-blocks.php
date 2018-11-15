@@ -16,6 +16,18 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_text_image') :
 			get_template_part('blocks/text-image');
 
+			elseif(get_row_layout() == 'block_columns_two') :
+			get_template_part('blocks/columns-two');
+
+			elseif(get_row_layout() == 'block_columns_three') :
+			get_template_part('blocks/columns-three');
+
+			elseif(get_row_layout() == 'block_columns_four') :
+			get_template_part('blocks/columns-four');
+
+			elseif(get_row_layout() == 'block_columns_six') :
+			get_template_part('blocks/columns-six');
+
 
 			else : endif;
 
