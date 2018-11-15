@@ -14,6 +14,15 @@
 	}
 ?>
 <section <?php echo $html_id; ?> class="block columns-two<?php echo $html_class; ?>">
+	<?php if (get_sub_field('section_heading')): ?>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			<?php the_sub_field('section_heading'); ?>
+			</div>
+		</div>
+	</div>
+	<?php endif; ?>
 	<div class="container">
 		<div class="row">
 
