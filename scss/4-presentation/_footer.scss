@@ -1,25 +1,26 @@
 .site-footer {
-	background-color: #ccc;
-	h3,
-	.widget-title {
-		margin: 0
-	}
-	ul.menu {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	p {
-		margin: 0;
-	}
-	.footer-utility {
-		background-color: #AAA;
+  background-color: #ccc;
+}
 
-		.copy {
+.site-footer h3,
+.site-footer .widget-title {
+  margin: 0;
+}
 
-		}
-		.designby{
-			text-align:right;
-		}
-	}
+.site-footer ul.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .footer-utility {
+  background-color: #AAA;
+}
+
+.site-footer .footer-utility .designby {
+  text-align: right;
 }
