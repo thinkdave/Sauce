@@ -28,6 +28,9 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_columns_six') :
 			get_template_part('blocks/columns-six');
 
+		elseif(get_row_layout() == 'block_accordion') :
+			get_template_part('blocks/accordion');
+
 
 			else : endif;
 
