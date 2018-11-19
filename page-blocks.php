@@ -34,6 +34,9 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_accordion') :
 			get_template_part('blocks/accordion');
 
+			elseif(get_row_layout() == 'block_cta') :
+			get_template_part('blocks/cta');
+
 
 			else : endif;
 
