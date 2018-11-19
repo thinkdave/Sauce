@@ -28,7 +28,10 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_columns_six') :
 			get_template_part('blocks/columns-six');
 
-		elseif(get_row_layout() == 'block_accordion') :
+			elseif(get_row_layout() == 'block_image_fullwidth') :
+			get_template_part('blocks/image-fullwidth');
+
+			elseif(get_row_layout() == 'block_accordion') :
 			get_template_part('blocks/accordion');
 
 
