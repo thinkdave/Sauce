@@ -46,6 +46,21 @@ jQuery(function( $ ){
         $(this).toggleClass('active');
         return false;
     });
-
+	
+	// HERO SLIDER
+	var hero_slider = $('.hero-slides-wrapper');
+	if((hero_slider).length) {
+		$('.hero-slider .hero-slides-wrapper').slick({
+			autoplay: true,
+			autoplaySpeed: 5000,
+			dots: true,
+			arrows: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			fade: true,
+			adaptiveHeight: true
+		});
+	}
 
 });

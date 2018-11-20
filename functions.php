@@ -84,6 +84,7 @@ if ( ! function_exists( 'thm_load_style' ) ) {
 // ========================================
 if ( ! function_exists( 'thm_enqueue_scripts' ) ) {
   function thm_enqueue_scripts() {
+  	wp_enqueue_script( 'thm-slick-slider', get_template_directory_uri() . '/js/jquery.slick.min.js', array( 'jquery'), '', true );
     wp_enqueue_script( 'thm-main', get_template_directory_uri() . '/js/main.js', array( 'jquery'), '', true );
 
     if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
