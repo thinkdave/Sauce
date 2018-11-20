@@ -37,6 +37,9 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_cta') :
 			get_template_part('blocks/cta');
 
+			elseif(get_row_layout() == 'block_hero_slider') :
+			get_template_part('blocks/hero-slider');
+
 
 			else : endif;
 
