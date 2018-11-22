@@ -40,6 +40,12 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_hero_slider') :
 			get_template_part('blocks/hero-slider');
 
+			elseif(get_row_layout() == 'block_testimonial') :
+			get_template_part('blocks/testimonial');
+
+		elseif(get_row_layout() == 'block_testimonial_slider') :
+			get_template_part('blocks/testimonial-slider');
+
 
 			else : endif;
 

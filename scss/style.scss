@@ -8,6 +8,7 @@ Text Domain: thm
 
 // 1 - 3rd party tools
 @import '1-lib/normalize';
+@import '1-lib/slick-slider';
 
 // 2 - helpers
 @import '2-helpers/variables';
@@ -41,3 +42,5 @@ Text Domain: thm
 @import '5-blocks/image-fullwidth';
 @import '5-blocks/cta';
 @import '5-blocks/hero-slider';
+@import '5-blocks/testimonial';
+@import '5-blocks/testimonial-slider';
