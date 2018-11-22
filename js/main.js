@@ -63,4 +63,20 @@ jQuery(function( $ ){
 		});
 	}
 
+	// TESTIMONIAL SLIDER
+	var testimonial_slider = $('.testimonial-slides-wrapper');
+	if((testimonial_slider).length) {
+		$('.testimonial-slider .testimonial-slides-wrapper').slick({
+			autoplay: true,
+			autoplaySpeed: 5000,
+			dots: true,
+			arrows: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			fade: true,
+			adaptiveHeight: true
+		});
+	}
+
 });
