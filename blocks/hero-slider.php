@@ -3,9 +3,15 @@
 This block is using jquery slick slider. To make it work follow the steps below:
 
 1. Enqueue scripts to functions.php:
-		wp_enqueue_script( 'thm-slick-slider', get_template_directory_uri() . '/js/jquery.slick.min.js', array( 'jquery'), '', true );
+	wp_enqueue_script( 'thm-slick-slider', get_template_directory_uri() . '/js/jquery.slick.min.js', array( 'jquery'), '', true );
 
-2. Add CSS via scss/5-blocks/_hero_slider.scss
+	!!! Testimonial slider also uses this JS Lib. Make sure you don't included it twice.
+
+2. Add CSS via:
+    - scss/1-lib/_slick-slider.scss 
+    - scss/5-blocks/_hero-slider.scss
+
+    !!! Testimonial slider also uses this /scss/1-lib/_slick-slider.scss Make sure you don't included it twice.
 
 3. Import CSS via scss/style.scss 
 		@import '5-blocks/hero-slider';
