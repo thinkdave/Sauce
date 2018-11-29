@@ -69,7 +69,7 @@ add_action( 'widgets_init', 'thm_widgets_init' );
 if ( ! function_exists( 'thm_load_style' ) ) {
   function thm_load_style() {
     if ( ! is_admin() ) {
-      wp_enqueue_style( 'thm-style', get_stylesheet_uri(), array( 'thm-fonts', 'font-awesome' ) );
+      wp_enqueue_style( 'thm-style', get_stylesheet_uri(), array( 'font-awesome' ) );
       wp_register_style( 'font-awesome', '//use.fontawesome.com/releases/v5.0.13/css/all.css' );
       wp_register_style( 'thm-fonts', '//fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i', array(), null );
     }
