@@ -3745,6 +3745,10 @@ textarea {
 /*--------------------------------------------------------------
 # Team with bios
 --------------------------------------------------------------*/
+.block-team-bios .team-member {
+  cursor: pointer;
+}
+
 .block-team-bios .team-member .member-thumb img {
   display: block;
   margin: 0 auto 0px;
@@ -3787,6 +3791,7 @@ textarea {
 
   .block-team-bios .summary {
     display: none;
+    background: #eee;
   }
 
   .block-team-bios .summary .container .row {
