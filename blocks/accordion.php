@@ -47,4 +47,4 @@
   		</div><!-- .row -->
 	</div><!-- .container -->
 </section>
-<!--hero-->
+<!--accordion-->
