@@ -46,8 +46,14 @@ get_header(); ?>
 			elseif(get_row_layout() == 'block_testimonial') :
 			get_template_part('blocks/testimonial');
 
-		elseif(get_row_layout() == 'block_testimonial_slider') :
+			elseif(get_row_layout() == 'block_testimonial_slider') :
 			get_template_part('blocks/testimonial-slider');
+
+			elseif(get_row_layout() == 'block_team') :
+			get_template_part('blocks/team');
+
+			elseif(get_row_layout() == 'block_team_bio') :
+			get_template_part('blocks/team-with-bio');
 
 
 			else : endif;

@@ -78,5 +78,62 @@ jQuery(function( $ ){
 			adaptiveHeight: true
 		});
 	}
+	// -- END TESTIMONIAL SLIDER -----------------------------------
 
+	// TEAM GRID
+    function mediaSize() { 
+    	/* Set the matchMedia */
+    	
+		if (window.matchMedia('(min-width: 768px)').matches) {
+
+			$('.block-team-bios .team-member.has-bio').on('click', function() {
+
+	            var member = $(this);
+	            var team = member.parent().parent();
+	            var summaryContainer  = team.next();
+
+	            $('.team-member').removeClass('active');
+	            member.addClass('active');
+
+	            summaryContainer.find('.col').html(member.find('.member-bio-mobile-inner').clone());
+	            
+	            setTimeout(function(){
+	                $('html, body').animate({
+	                    scrollTop: summaryContainer.offset().top - 150
+	                }, 300);
+	            }, 300);
+	                   
+	            if (summaryContainer.hasClass('active')) {
+	                // do nothing
+	            }else {
+	                $('.team-grid .summary.active').slideUp(200).removeClass('active');
+	                summaryContainer.slideDown(200).addClass('active');
+	            }
+	            return false;
+	        });
+
+	        $('.summary .close').click(function(){
+	             $(this).parent().parent().parent().slideUp(200).removeClass('active');
+	             $('.team-member').removeClass('active');
+	             return false;
+	        });			
+	    // if smaller than 768px
+		} else {
+				$('.block-team-bios .team-member .member-bio-desktop .more-info a').on('click', function() {
+					if ($(this).parent().parent().parent().hasClass('has-bio')) {
+				    	$(this).parent().parent().next().slideToggle();
+				    }
+			    return false;
+			});
+		   		$('.block-team-bios .team-member.has-bio .member-bio-mobile a.close').click(function(){
+					$(this).parent().slideUp();
+					return false;
+				});		
+		}
+	};
+	/* Call the function */
+  	mediaSize();
+  	/* Attach the function to the resize event listener */
+	window.addEventListener('resize', mediaSize, false); 
+	// -- END TEAM GRID -----------------------------------
 });
