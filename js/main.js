@@ -99,7 +99,7 @@ jQuery(function( $ ){
 	            
 	            setTimeout(function(){
 	                $('html, body').animate({
-	                    scrollTop: summaryContainer.offset().top - 150
+	                    scrollTop: summaryContainer.offset().top - 100
 	                }, 300);
 	            }, 300);
 	                   
