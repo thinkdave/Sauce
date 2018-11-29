@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/yqy8qir.css">
+
+
   <?php wp_head(); ?>
 </head>
 
