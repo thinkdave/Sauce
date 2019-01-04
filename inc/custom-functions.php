@@ -29,6 +29,8 @@ function thm_body_classes( $classes ) {
   if( have_rows( 'blocks' ) ) : while( have_rows( 'blocks' ) ) : the_row();
     if( get_row_layout() == 'block_hero' ) {
       $classes[] = 'has-hero';
+    }else{
+      $classes[] = 'no-hero';	
     }
   endwhile;
 
